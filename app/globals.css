@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,4 +24,39 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+/* styles.css */
+
+.text-container {
+  opacity: 0;
+  transform: translateY(20px); /* Optional: You can add a sliding effect */
+  transition: opacity 1s ease, transform 1s ease; /* Adjust the duration and easing as needed */
+}
+
+.text-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+  .fadeIn {
+    animation: fadeInAnimation 2s;
+    font-size: 50px;
+  }
+  
+  @keyframes fadeInAnimation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+
+.header {
+  height: 100px;
+  background-color: #333; /* Example background color */
+  color: #fff; /* Example text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1s ease; /* Apply the animation */
 }
