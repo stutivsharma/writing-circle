@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI API Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>OpenAI API Example</h1>
+    
+    <form id="form1">
+        <h2>Form 1: Get Writing Prompts</h2>
+        <input type="text" id="subject" placeholder="Subject">
+        <input type="text" id="location" placeholder="Location">
+        <select id="format">
+            <option value="">Select Format</option>
+            <option value="short">Short</option>
+            <option value="long">Long</option>
+        </select>
+        <input type="text" id="keyword1" placeholder="Keyword">
+        <button type="submit">Submit</button>
+    </form>
+    
+    <form id="form2">
+        <h2>Form 2: Get Writing Activity</h2>
+        <input type="text" id="keyword2" placeholder="Keyword">
+        <button type="submit">Submit</button>
+    </form>
+    
+    <div id="response"></div>
+    
+    <script src="script.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
